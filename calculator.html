@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rodrigo Leite - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+
+<!-- Menu de navegacao -->    
+<header>
+    <ul>
+        <li class="li"><a class="nav" href="index.html">HOME</a></li>
+        <li class="li"><a class="nav" href="portfolio.html">PORTFOLIO</a></li>
+        <li class="li"><a class="nav" href="about.html">ABOUT ME</a></li>
+        <li class="li"><a class="nav" href="contact.html">CONTACT ME</a></li>
+      </ul>
+</header>
+<!--FIM DO MENU DE NAVEGACAO-->
+
+
+<!-- Corpo da página -->
+<body>
+    
+    <div class="calcgeneral">
+        <div class="calculator">
+            <form>
+                <div class="display">
+                    <input type="text" name="Display" id="display">
+                </div>
+                <div class="calcbuttons">
+                    <input type="button" value="AC" onclick="display.value = '' " class="operator">
+                    <input type="button" value="DE" onclick="display.value.toString().slice(0, -1)" class="operator">
+                    <input type="button" value="." onclick="display.value += '.' " class="operator">
+                    <input type="button" value="/" onclick="display.value += '/' " class="operator">
+                </div>
+                <div class="calcbuttons">
+                    <input type="button" value="7" onclick="display.value += '7' ">
+                    <input type="button" value="8" onclick="display.value += '8' ">
+                    <input type="button" value="9" onclick="display.value += '9' ">
+                    <input type="button" value="*" onclick="display.value += '*' " class="operator">
+                </div>
+                <div class="calcbuttons">
+                    <input type="button" value="4" onclick="display.value += '4' ">
+                    <input type="button" value="5" onclick="display.value += '5' ">
+                    <input type="button" value="6" onclick="display.value += '6' ">
+                    <input type="button" value="-" onclick="display.value += '-' " class="operator">
+                </div>
+                <div class="calcbuttons">
+                    <input type="button" value="1" onclick="display.value += '1' ">
+                    <input type="button" value="2" onclick="display.value += '2' ">
+                    <input type="button" value="3" onclick="display.value += '3' ">
+                    <input type="button" value="+" onclick="display.value += '+' " class="operator">
+                </div>
+                <div>
+                    <input type="button" value="00" onclick="display.value += '00' ">
+                    <input type="button" value="0" onclick="display.value += '0' ">
+                    <input type="button" value="=" onclick="display.value = eval(display.value)" class="equal operator">
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+</body>
+
+    <!--RODAPE DA PAGINA-->
+    <footer>
+        <h5>SOCIAL MEDIA</h5>
+    
+        <!-- Add icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- Add font awesome icons -->
+        <a href="https://www.facebook.com/rrleite1" class="fa fa-facebook"></a>
+        <a href="https://www.linkedin.com/in/drigorleite/" class="fa fa-linkedin"></a>
+        <a href="https://www.instagram.com/drigorleite/" class="fa fa-instagram"></a>
+        <h5>Rodrigo Leite © 2024</h6>
+        </div>
+    </footer>
+
+
+
+</html>

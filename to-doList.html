@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+
+<!-- Menu de navegacao -->    
+<header>
+    <ul class="ul">
+        <li class="li"><a class="nav" href="index.html">HOME</a></li>
+        <li class="li"><a class="nav" href="portfolio.html">PORTFOLIO</a></li>
+        <li class="li"><a class="nav" href="about.html">ABOUT ME</a></li>
+        <li class="li"><a class="nav" href="contact.html">CONTACT ME</a></li>
+      </ul>
+</header>
+<!--FIM DO MENU DE NAVEGACAO-->
+
+<body>
+    <div class="container">
+        <div class="todo-app">
+            <h2>To-Do List <img src="images/icon.png"></h2>
+            <div class="row">
+                <input class="inp" type="text" id="input-box" placeholder="Add your text">
+                <button class="but" onclick="addTask()">Add</button>
+            </div>
+            <ul id="list-container"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
